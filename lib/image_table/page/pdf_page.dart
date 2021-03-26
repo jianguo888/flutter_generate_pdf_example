@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_generate_pdf_example/api/pdf_api.dart';
-import 'package:flutter_generate_pdf_example/api/pdf_paragraph_api.dart';
-import 'package:flutter_generate_pdf_example/widget/button_widget.dart';
+import 'package:flutter_generate_pdf_example/image_table/api/pdf_api.dart';
+import 'package:flutter_generate_pdf_example/image_table/widget/button_widget.dart';
 
-import '../main.dart';
+import '../../main.dart';
 
-class PdfPage extends StatefulWidget {
+class PdfTablePage extends StatefulWidget {
   @override
-  _PdfPageState createState() => _PdfPageState();
+  _PdfTablePageState createState() => _PdfTablePageState();
 }
 
-class _PdfPageState extends State<PdfPage> {
+class _PdfTablePageState extends State<PdfTablePage> {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
@@ -24,19 +23,18 @@ class _PdfPageState extends State<PdfPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 ButtonWidget(
-                  text: 'Simple PDF',
+                  text: 'Table PDF',
                   onClicked: () async {
-                    final pdfFile =
-                        await PdfApi.generateCenteredText('Sample Text');
+                    final pdfFile = await PdfApi.generateTable();
 
                     PdfApi.openFile(pdfFile);
                   },
                 ),
                 const SizedBox(height: 24),
                 ButtonWidget(
-                  text: 'Paragraphs PDF',
+                  text: 'Image PDF',
                   onClicked: () async {
-                    final pdfFile = await PdfParagraphApi.generate();
+                    final pdfFile = await PdfApi.generateImage();
 
                     PdfApi.openFile(pdfFile);
                   },

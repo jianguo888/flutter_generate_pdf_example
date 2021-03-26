@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_generate_pdf_example/page/pdf_page.dart';
+import 'package:flutter_generate_pdf_example/simple_paragraphs/page/pdf_page.dart';
+
+import 'image_table/page/pdf_page.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,6 +22,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: title,
         theme: ThemeData(primarySwatch: Colors.deepOrange),
-        home: PdfPage(),
+        // home: PdfSimplePage(),
+        home: PdfTablePage(),
       );
 }

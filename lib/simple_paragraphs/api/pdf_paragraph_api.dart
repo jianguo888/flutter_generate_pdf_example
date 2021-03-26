@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_generate_pdf_example/api/pdf_api.dart';
+import 'package:flutter_generate_pdf_example/simple_paragraphs/api/pdf_api.dart';
 
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart';
