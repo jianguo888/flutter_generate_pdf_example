@@ -1,7 +1,9 @@
 # flutter_generate_pdf_example
 
-A new Flutter application.
+
 一个操作pdf的例子
+
+![image-20220211092158371](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20220211092158371.png)
 
 
 如果你迷惘，不妨看看码农的轨迹，
