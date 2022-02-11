@@ -20,9 +20,9 @@ class PdfApi {
     final headers = ['Name', 'Age'];
 
     final users = [
-      User(name: 'James', age: 19),
-      User(name: 'Sarah', age: 21),
-      User(name: 'Emma', age: 28),
+      User(name: 'jianguo', age: 19),
+      User(name: 'nust', age: 21),
+      User(name: 'codeboy', age: 28),
     ];
     final data = users.map((user) => [user.name, user.age]).toList();
 
