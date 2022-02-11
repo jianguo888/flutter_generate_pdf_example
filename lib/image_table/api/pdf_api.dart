@@ -41,7 +41,7 @@ class PdfApi {
 
     final imageSvg = await rootBundle.loadString('assets/fruit.svg');
     final imageJpg =
-        (await rootBundle.load('assets/person.jpg')).buffer.asUint8List();
+        (await rootBundle.load('assets/person.png')).buffer.asUint8List();
 
     final pageTheme = PageTheme(
       pageFormat: PdfPageFormat.a4,
